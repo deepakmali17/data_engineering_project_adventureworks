@@ -1,0 +1,33 @@
+{
+	"name": "Json_git_param_DS",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ADLS_CSV_LS",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "dynamic_input.json",
+				"folderPath": "parameters",
+				"fileSystem": "prj1landing"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"p_relative_url": {
+					"type": "string"
+				},
+				"folderName": {
+					"type": "string"
+				},
+				"fileName": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}
