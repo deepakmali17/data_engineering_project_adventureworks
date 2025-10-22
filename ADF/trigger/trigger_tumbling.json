@@ -1,0 +1,27 @@
+{
+	"name": "trigger_tumbling",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipeline": {
+			"pipelineReference": {
+				"referenceName": "dynamic_pipeline",
+				"type": "PipelineReference"
+			}
+		},
+		"type": "TumblingWindowTrigger",
+		"typeProperties": {
+			"frequency": "Hour",
+			"interval": 24,
+			"startTime": "2025-10-22T11:43:00Z",
+			"endTime": "2025-10-23T09:37:00Z",
+			"delay": "00:00:00",
+			"maxConcurrency": 50,
+			"retryPolicy": {
+				"count": 1,
+				"intervalInSeconds": 30
+			},
+			"dependsOn": []
+		}
+	}
+}
