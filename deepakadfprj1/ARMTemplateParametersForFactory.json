@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "deepakadfprj1"
+		},
+		"ADLS_CSV_LS_accountKey": {
+			"value": ""
+		},
+		"ADLS_CSV_LS_properties_typeProperties_url": {
+			"value": "https://deepak1990adls4.dfs.core.windows.net/"
+		},
+		"AzureKeyVault_LS_properties_typeProperties_baseUrl": {
+			"value": "https://prj1kv.vault.azure.net/"
+		},
+		"httplinkedservice_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/"
+		}
+	}
+}
